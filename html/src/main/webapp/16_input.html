@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input tag</title>
+</head>
+<body>
+	<!-- 
+		get : 255자 이내로 전달, 평문전달
+		post : 무제한 데이터 전달, 보안전달, 서버에 전달만 가능
+	 -->
+	<form>
+		<!-- 
+			disabled : 데이터 전송 안됨 
+			readonly : 데이터 전송 가능
+		-->
+		<input type="text" name="name"
+			value="홍길동"
+			placeholder="이름을 입력하세요."
+			readonly><br>
+		<input type="password" name="pwd"><br>
+		
+		<!-- checkbox나 radio 에 value를 추가해서 처리한다. -->
+		<input type="checkbox" name="hobby" value="music" checked>음악<br>
+		<input type="checkbox" name="hobby" value="sports">운동<br>
+		<input type="checkbox" name="hobby" value="movie">영화<br>
+		
+		<!-- radio 의 name 값이 같으면 같은 그룹으로 처리 -->
+		<input type="radio" name="gender" value="man" checked>남자<br>
+		<input type="radio" name="gender" value="woman">여자<br>
+		
+		<input type="color"><br>
+		<input type="date"><br>
+		<input type="datetime-local"><br>
+		<input type="email"><br>
+		<input type="file" multiple><br>
+		<input type="button" value="버튼"><br>
+		<input type="hidden" value="ㅎㅎㅎ"><br>
+		<input type="image" src="naver_logo.png"><br>
+		<input type="month"><br>
+		<input type="number"><br>
+		<input type="range"><br>
+		<input type="search"><br>
+		<input type="tel"><br>
+		<input type="time"><br>
+		<input type="url"><br>
+		<input type="week"><br>
+		
+		
+		<!-- reset과 submit 은 form 태그 안에서만 가능 -->
+		<input type="reset" value="다시입력">
+		<input type="submit" value="전송">
+		
+	</form>
+</body>
+</html>
