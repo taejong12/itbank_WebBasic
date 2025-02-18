@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+<style>
+	div {
+		margin:200px;
+		width:100px;
+		height:100px;
+		background-color: red;
+	}
+	div:hover {
+		/* scale(x, y) : 배율 , x와 y값이 같으면 하나만 쓰면 됨*/
+		/* transform:scale(2, 2); */
+		/* transform:scale(2); */
+		/* transform:scaleX(2); */ /* 넓이 */
+		/* transform:scaleY(2); */ /* 높이 */
+		
+		/* translate(x, y) : 이동 */
+		/* transform:translate(100px, 100px); */
+		/* transform:translateX(100px); */ /* 좌우측으로 이동 */
+		/* transform:translateY(-100px); */ /* 위 아래로 이동 */
+		
+		/* skew(x각도, y각도) : 기울기 */
+		/* transform:skew(30deg, 30deg); */
+		/* transform:skewX(30deg); */
+		transform:skewY(30deg);
+	}
+</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

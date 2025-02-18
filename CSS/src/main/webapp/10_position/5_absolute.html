@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position absolute</title>
+<style>
+	#box1 {
+		width:500px;
+		height:200px;
+		background-color: pink;
+	}
+	#parent {
+		position: absolute;
+		width:500px;
+		/*height:500px;*/
+		background-color: yellow;
+	}
+	#child {
+		position:absolute;
+		width:200px;
+		height:200px;
+		background-color: blue;
+		margin-top:100px;
+		top:100px;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		absolute 3차원 개념
+		부모와의 마진 병합 현상이 없다.
+		부모가 높이를 가지지 못하면 자식의 높이와 달라진다.
+		top,bottom,right,left의 속성을 사용할 수 있다.
+		- 부모 position 에 따라 기준점이 달라진다.
+		- 부모가 static 이면 브라우저 시작점이 기준점
+		- 부모가 fixed, relative, absolute 라면 부모의 시작점이 기준점
+	 -->
+	 <div id="box1"></div>
+	 <div id="parent">
+	 	<div id="child"></div>
+	 </div>
+</body>
+</html>

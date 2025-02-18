@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position fixed</title>
+<style>
+	#box1 {
+		width:500px;
+		height:200px;
+		background-color: gray;
+	}
+	#parent {
+		width:500px;
+		/*height:500px;*/
+		background-color: yellow;
+	}
+	#child {
+		position:fixed;
+		width:200px;
+		height:200px;
+		background-color: blue;
+		/* margin-top:500px; */
+		top : 100px;
+	}
+	#box2 {
+		width:500px;
+		height:200px;
+		background-color: pink;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		fixed 3차원 개념의 속성
+		부모와의 마진 병합 현상이 없다.
+		top, bottom, left, right 속성을 사용할 수 있다.
+		- 기준점은 브라우저 시작점 부터 
+		부모의 높이가 없으면 자식의 높이와 달라진다.		
+	 -->
+	<div id="box1"></div>
+	<div id="parent">
+		<div id="child"></div>
+	</div>
+	<div id="box2"></div>
+</body>
+</html>
+
+

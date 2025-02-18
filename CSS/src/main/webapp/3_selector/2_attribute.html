@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style>
+	/* 선택하는 범위가 큰 것부터 먼저 와야 한다 */
+	a[href="www"] {
+		color:blue;
+	}
+	a[href] {
+		color:yellow;
+	}
+	a {
+		color:red;
+	}
+</style>
+</head>
+<body>
+	<a>기본 a 태그</a><br>
+	<a href="#">링크가 있는 a 태그</a><br>
+	<a href="www" target="_blank">
+		새창 열리는 a 태그</a>
+</body>
+</html>

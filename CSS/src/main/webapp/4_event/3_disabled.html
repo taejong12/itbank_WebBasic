@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>disabled</title>
+<style>
+	/* input 과 input:enabled 는 같은 선택자 */
+	input:enabled, button:enabled {
+		background-color: #CCC;
+	}
+	input:disabled, button:disabled {
+		background-color: #BAB;
+	}
+</style>
+</head>
+<body>
+	<input type="text">
+	<button>버튼</button>
+	<input type="text" disabled>
+	<button disabled>버튼</button>
+</body>
+</html>

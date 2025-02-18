@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation basic</title>
+<style>
+	div {
+		width:100px;
+		height:100px;
+		border-color:red;
+		/* animation-name: 애니메이션 이름 지정 */
+		animation-name:bgchange;
+		/* animation-duration : 애니메이션 실행 시간 */
+		animation-duration:5s;
+		/* fill-mode : 종료 후 유지 여부
+			- none : 원래 스타일로 돌아감 
+			- forwards : 100% 스타일 유지
+			- backwards : 0% 스타일 유지
+			- both : forwards 와 backwards 의 조합 
+		*/
+		animation-fill-mode:forwards;
+		/* animation-count : 애니메이션 실행 횟수 */
+		animation-iteration-count:3;
+		/* animation-direction : 진행 방향 
+			- reverse : 100% ~ 0% 로 진행
+			- alternate : 0 ~ 100 100 ~ 0 로 진행
+			- alternate-reverse : 100 ~ 0 0 ~ 100
+		*/
+		animation-direction:alternate-reverse;
+		/*
+		animation : name duration timing-function 
+			delay iteration-count direction fill-mode;
+		*/
+	}
+	@keyframes bgchange {
+		0% {background-color:red;}
+		25% {background-color:orange;}
+		50% {background-color:yellow;}
+		100% {background-color:green;}
+	}
+</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

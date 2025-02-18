@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style>
+	.box {
+		width:100px;
+		height:100px;
+	}
+	.red-box {
+		background-color:red;
+		position:relative;
+		z-index:1;
+	}
+	.blue-box {
+		background-color: blue;
+		position:absolute;
+		top:0;
+		left:0;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		z-index 높이를 의미하고 숫자 높을수록 높다.
+		z-index 가 설정되어 있지 않으면 0 이다.
+	 -->
+	<div class="box red-box"></div>
+	<div class="box blue-box"></div>
+</body>
+</html>

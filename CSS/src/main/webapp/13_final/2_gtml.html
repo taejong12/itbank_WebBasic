@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>홈페이지</title>
+<style>
+	header {
+		border : 1px solid black;
+		text-align: center;
+	}
+	h1 {
+		display:inline-block;
+	}
+	a {
+		position:relative;
+		float:right;
+		top : 30px;
+		right: 50px;
+	}
+	aside {
+		border : 1px solid black;
+		clear:both;
+		width:150px;
+		height:80vh;
+		float:left;
+	}
+	ul {
+		position:absolute;
+		top:40%;
+	}
+	li {
+		list-style: none;
+		line-height: 30px;
+	}
+	main {
+		border: 1px solid black;
+		float:left;
+		width:84%;
+		margin-left:2px;
+		height:80vh;
+		text-align: center;
+	}
+	main > h1 {
+		position:absolute;
+		top:45%;
+		left:50%;
+	}
+	
+	footer {
+		clear:both;
+		border: 1px solid black;
+		position:fixed;
+		height:100px;
+		width:100vw;
+		bottom:0px;
+		text-align: center;
+	}
+	footer > span {
+		position:absolute;
+		top:50%;
+		left:40%;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>회사이름</h1>
+		<a>로그인</a>
+	</header>
+	<aside>
+		<nav>
+			<ul>
+				<li>메뉴1</li>
+				<li>메뉴2</li>
+				<li>메뉴3</li>
+			</ul>
+		</nav>
+	</aside>
+	<main>
+		<h1>회사 콘텐츠</h1>
+	</main>
+	<footer>
+		<span>회사 주소나 회사 이메일 등등</span>
+	</footer>
+</body>
+</html>
