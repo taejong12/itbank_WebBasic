@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연산자</title>
+<script>
+	// +, -, *, /, %, ** : 거듭제곱
+	let num1 = 10;
+	let num2 = 2;
+	console.log(num1 ** 2);
+	
+	// ++, -- : 전치, 후치
+	console.log(num1++ + num2);
+	console.log(--num1 + num2);
+	
+	// 복합 대입 연산자
+	// +=, -=, *=, /=, %=, **=
+	console.log(num1+=num2);
+	console.log(num1-=num2);
+	console.log(num1*=num2);
+	console.log(num1/=num2);
+	console.log(num1%=num2);
+	console.log(num1**=num2);
+	
+	console.log(10 + "10");
+	
+	let num3 = 10;
+	let strnum = "10";
+	console.log(num3 == strnum);
+	// === : 값과 자료형이 동일해야 함
+	console.log(num3 === strnum);
+	// String() : 문자열로 자료형을 바꿔준다.
+	console.log(String(num3) === strnum);
+	// Number() : 숫자형으로 자료형을 바꿔준다.
+	console.log(num3 === Number(strnum));
+	
+	// 조건식 ? 참일때 실행 : 거짓일때 실행;
+	let score = 90;
+	let grade = score >= 90 ? 'A+' : 'B';
+	console.log(grade);
+</script>
+</head>
+<body>
+
+</body>
+</html>

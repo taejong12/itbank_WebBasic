@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>inline Event</title>
+</head>
+<body>
+	<button onclick="clickEvent()">클릭</button>
+	<input type="text" onfocus="focusEvent()" 
+		onblur="blurEvent()">
+
+	<script>
+		function clickEvent(){
+			alert("click");
+		}
+		function focusEvent(){
+			console.log("focus on");
+		}
+		function blurEvent(){
+			console.log("focus out");
+		}
+	</script>
+</body>
+</html>

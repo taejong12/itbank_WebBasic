@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>구구단</title>
+<script>
+	let dan = prompt('출력할 단을 입력하세요');
+	let gugudan = '';
+	if(dan >= 2 && dan <=9){
+		gugudan += `===== ${dan}dan =====<br>`;
+		for(let i=1;i<=9;i++) {
+			gugudan += `${dan} * ${i} = ${dan * i}<br>`;
+		}
+	} else {
+		gugudan += "출력할 수 없습니다.";
+	}
+	
+	document.write(gugudan);
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

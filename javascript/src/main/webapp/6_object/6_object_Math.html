@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math</title>
+<script>
+	let random = Math.random();
+	console.log(random); // 0 ~ 1 사이의 난수 발생
+	
+	function getMaxRandom(max) {
+		return Math.floor(Math.random() * max) + 1;
+		// +1 을 하는 이유 
+		// 0 ~ max-1 난수 발생을 1 ~ max 처리 하기 위해서 사용
+	}
+	console.log(getMaxRandom(2));  
+	
+	function getMinMaxRandom(min, max) {
+		return Math.floor(Math.random() * 
+				(max - min)) + 1 + min;
+	}
+	
+	console.log(getMinMaxRandom(10, 20));
+</script>
+</head>
+<body>
+
+</body>
+</html>

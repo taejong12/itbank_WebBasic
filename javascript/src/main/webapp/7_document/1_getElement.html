@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>요소 선택</title>
+</head>
+<body>
+	<!-- 
+		id : 페이지에 하나의 속성만 가진다.
+		class : 페이지에 여러개의 같은 속성을 가진다.
+	 -->
+	<h1 id="title">title</h1>
+	<p class="text">text-1</p>
+	<p class="text">text-2</p>
+
+	<script>
+		const title = document.getElementById("title");
+		const text = 
+			document.getElementsByClassName("text");
+		console.log(title);
+		console.log(text);
+		
+		for(let i of text){
+			console.log(i);
+		}
+		console.log(text[0]);
+		console.log(text[1]);
+		
+		let tag = document.getElementsByTagName("p");
+		console.log(tag);
+		
+		for(let i of tag){
+			console.log(i);
+		}
+		console.log(tag[0]);
+		console.log(tag[1]);
+	</script>
+</body>
+</html>

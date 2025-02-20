@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제2</title>
+<script>
+	// 알바비 계산 함수(시간은 8시간)
+	// 기본 일수는 20일
+	// 기본 시간당 수당은 10030원
+	// 1. 기본 일수와 기본 수당으로 계산 
+	// 2. 일수는 13일 수당은 기본 수당
+	// 3. 기본 일수와 수당을 11000원
+	// 4. 일수는 22일 수당은 11000원
+	function salary(day=20, pay=10030) {
+		console.log((day * 8 * pay) + " 원");
+	}
+	salary();
+	salary(13);
+	salary(20, 11000);
+	salary(22, 11000);
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>querySelector</title>
+</head>
+<body>
+	<div class="box-1">
+		<p class="text">text1</p>
+		<p class="text">text2</p>
+	</div>
+	<div class="box-2">
+		<p class="text">text3</p>
+		<p class="text">text4</p>
+	</div>
+	
+	<script>
+		const box = document.querySelector(".box-1");
+		console.log(box);
+		const getBox = 
+			document.getElementsByClassName("box-1");
+		console.log(getBox);
+		console.log(getBox[0]);
+		
+		const text = document.querySelector(".text");
+		console.log(text);
+		
+		const allText = 
+			document.querySelectorAll(".text");
+		console.log(allText);
+		
+		for(let i of allText) {
+			console.log(i);
+		}
+	</script>
+</body>
+</html>
+
+
+
+

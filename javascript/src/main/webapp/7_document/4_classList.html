@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>classList</title>
+<style>
+	.a {
+		color:red;
+	}
+	.b {
+		font-size: 20px;
+	}
+</style>
+</head>
+<body>
+	<a>구글</a>
+	<button onclick="btnClick()">버튼</button>
+	<script>
+		let a_tag = document.querySelector("a");
+		// a_tag.setAttribute("class", "a b");
+		// console.log(a_tag);
+		// a_tag.removeAttribute("class");
+		a_tag.classList.add("a", "b");
+		a_tag.classList.remove("b");
+		a_tag.classList.add("b");
+	
+		function btnClick(){
+			const btn = document.querySelector("button");	
+			
+			btn.classList.toggle("a");
+		}
+		
+		
+	</script>
+</body>
+</html>

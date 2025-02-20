@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문제1</title>
+<script>
+	// 로또 번호 생성기 만들어 보세요.
+	// 1 ~ 45 까지 숫자 중 6개 중복 숫자 없이 해 보세요.
+	// array.push() -> 마지막에 추가
+	// array.sort((a, b) => a - b) -> 오름차순정렬
+	// array.sort((a, b) => b - a) -> 내림차순정렬
+	let lotto = [];
+	
+	while(lotto.length < 6) {
+		num = Math.floor(Math.random() * 45) + 1
+		if(!lotto.includes(num)) {
+			// lotto 에 숫자가 없으면 
+			lotto.push(num);
+		}
+	}
+	lotto.sort((a, b) => a - b);
+	console.log(lotto);
+	
+	// delete arr[인덱스번호] : 인덱스 번호 삭제
+	// arr.pop() : 마지막 값 삭제
+	// arr.first() : 첫번째 값 삭제
+</script>
+</head>
+<body>
+
+</body>
+</html>

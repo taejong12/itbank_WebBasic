@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>event object</title>
+</head>
+<body>
+	<input type="text">
+	
+	<script>
+		const input = 
+			document.querySelector("input");
+		input.addEventListener("keydown", function(e){
+			console.log(`keyCode : ${e.keyCode}`);
+			console.log(`ctrlKey : ${e.ctrlKey}`);
+			console.log(`altKey : ${e.altKey}`);
+			console.log(`shiftKey : ${e.shiftKey}`);
+		});
+	</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>라디오</title>
+</head>
+<body>
+	<form>
+		<label>
+			<input type="radio" name="fruits" value="apple">사과
+		</label>
+		<label>
+			<input type="radio" name="fruits" value="banana">바나나
+		</label>
+		<label>
+			<input type="radio" name="fruits" value="melon">멜론
+		</label>
+		<label>
+			<input type="radio" name="fruits" value="orange">오렌지
+		</label>		
+	</form>
+	
+	<script>
+		const radio = 
+			document.querySelectorAll("[type='radio']");
+		for(let i=0;i<radio.length;i++){
+			if(radio[i].value === 'banana'){
+				radio[i].checked = true;
+			}
+		}
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+

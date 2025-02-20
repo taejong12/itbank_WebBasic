@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>날짜 객체</title>
+<script>
+	const date = new Date();
+	console.log(date);
+	
+	// 월 표시는 0 ~ 11 로 표시
+	const date1 = new Date(2025, 0, 1);
+	console.log(date1);
+	
+	// new Date(년, 월, 일, 시, 분, 초)
+	const date2 = new Date(2025, 0, 1, 12, 5, 10);
+	console.log(date2);
+	
+	const date3 = new Date("2025-1-1");
+	console.log(date3);
+	
+	const date4 = new Date("2025-1-1-12:05:10");
+	console.log(date4);
+	
+	const date5 = new Date("2025/1/1/12:05:10");
+	console.log(date5);
+	
+	console.log(date.getFullYear());
+	console.log(date.getMonth());
+	console.log(date.getDate());
+	console.log(date.getHours());
+	console.log(date.getMinutes());
+	console.log(date.getSeconds());
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
