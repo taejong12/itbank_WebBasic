@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>캘린더</title>
+<script>
+	function dateTest() {
+		// setInterval(함수, 새로시간(ms))
+		setInterval(function() {
+			let currentDate = new Date();
+			document.getElementById("clock").innerText 
+				= currentDate;
+		}, 1000);
+		
+		// location.reload() : 새로 고침
+	}
+</script>
+</head>
+<body>
+	<div id='clock'></div>
+	<script>
+		dateTest();
+	</script>
+</body>
+</html>
+

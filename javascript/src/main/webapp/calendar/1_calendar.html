@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>캘린더</title>
+<script>
+	function dateTest() {
+		// new Date() : 날짜 객체 생성
+		let currentDate = new Date();
+		console.log(currentDate);
+		
+		// id=clock 에 currentDate 출력 해 보세요.
+		let clock = document.querySelector("#clock");
+		clock.innerText = currentDate;
+	}
+</script>
+</head>
+<body>
+	<div id='clock'></div>
+	<script>
+		dateTest();
+	</script>
+</body>
+</html>
+

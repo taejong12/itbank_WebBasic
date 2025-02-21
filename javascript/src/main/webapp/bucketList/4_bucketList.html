@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>버킷리스트</title>
+<link rel="stylesheet" href="style.css">
+<script>
+	function listClick() {
+		let lst = document.getElementById("lst");
+		
+		let lstList = document.getElementsByTagName("li");
+		
+		for(let i=0;i<lstList.length;i++){
+			lstList[i].addEventListener('click', activeLst);
+		}
+	}
+	
+	// event : 이벤트가 발생했을 때 사용할 수 있는 객체
+	function activeLst(event){
+		// console.log(event);
+		// console.log(event.target.parentElement);
+		// console.log(event.target.parentElement.children)
+		let lstList = 
+			event.target.parentElement.children;
+		
+		for(let i=0;i<lstList.length;i++){
+			lstList[i].removeAttribute('class');
+		}
+		// event.target.setAttribute('class', 'active');
+		this.setAttribute('class', 'active');
+	}
+</script>
+</head>
+<body>
+	<div id='mainDiv'>
+		<h1 id='title'>Bucket List</h1>
+		<hr>
+		<button id='addBtn'>목록추가</button>
+		<ul id='lst'>
+			<li>세계 일주</li>
+			<li>달 착륙</li>
+			<li>태양 근거리 실사</li>
+		</ul>
+	</div>
+	<script>
+		listClick();
+	</script>
+</body>
+</html>

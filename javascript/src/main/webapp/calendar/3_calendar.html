@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>캘린더</title>
+<script>
+	let now = new Date();
+	
+	document.write(now.getFullYear() + "년<br>");
+	// 세기+년도 
+	document.write(now.getYear() + "년<br>");
+	
+	// getMonth() : 0 ~ 11 반드시 1씩 증가시켜야 한다.
+	document.write(now.getMonth() + "월<br>");
+	document.write(now.getDate() + "일<br>");
+	
+	// getDay() : 0 ~ 6 0-일요일 6-토요일
+	document.write(now.getDay() + "요일<br>");
+	document.write(now.getHours() + "시<br>");
+	
+	document.write(now.getMinutes() + "분<br>");
+	document.write(now.getSeconds() + "초<br>");
+	
+	// div 하나 만들어서 1초 한번씩 시간 출력
+	// 형식은 2025-02-21 16:00:01
+	
+	function daily(){
+		setInterval(function() {
+			let now = new Date();
+			let div = document.querySelector("div");
+			div.innerText = 
+				`${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;		
+		}, 1000);
+	}
+</script>
+</head>
+<body>	
+	<div></div>
+	<script>daily()</script>
+</body>
+</html>
