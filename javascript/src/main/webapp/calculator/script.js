@@ -24,8 +24,16 @@
  * 문제 7.
  * 처음에 연산자로 시작할 수 없도록 구현
  * - -는 제외
+ * 
+ * 문제 8.
+ * 연산이 끝난 후 숫자가 입력되면 숫자로 시작되고
+ * 연산자로 시작하면 연산을 계산하도록 한다.
+ * 123+3=126 이후 8이 들어오면 8부터 시작
+ * 123+3=126 이후 + 가 들어오면 126+ 부터 시작
+ * 
  */
 
+let equalTrue = false;
 
 function main(){
 	let btn = 
@@ -41,7 +49,10 @@ function btnAction() {
 	
 	if(result.value == '0'){
 		result.value = '';
+	} else if (equalTrue && !isNaN(this.textContent)){
+		result.value = '';	
 	} 
+	equalTrue = false;
 	
 	if (this.textContent == 'C') {
 		result.value = '0';
@@ -54,6 +65,7 @@ function btnAction() {
 		}
 	} else if (this.textContent == '='){
 			result.value = eval(result.value);
+			equalTrue = true;
 	} else if(isNaN(this.textContent)){
 		let lastChar = 
 			result.value.substr(result.value.length-1, result.value.length);
