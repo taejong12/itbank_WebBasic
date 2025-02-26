@@ -1,0 +1,49 @@
+@charset "UTF-8";
+#mainDiv {
+	margin:0 auto;
+	width:30%;
+	text-align:center;
+}
+
+ul {
+	list-style-position:inside;
+	padding:0;
+}
+
+li {
+	position:relative;
+	list-style:none;
+	text-align:left;
+	border-bottom: 1px solid #999;
+	padding: 5px 0px;
+}
+
+#addBtn {
+	padding:5px 10px;
+	border: 0px;
+	background: rgb(78, 123, 247);
+	color:white;
+	border-radius: 5px;
+}
+
+.active {
+	background: rgb(228, 253, 182);
+}
+
+#lst button {
+	position:absolute;
+	top:0px;
+	right:0px;
+	background: red;
+	color:white;
+	padding:5px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+table {
+	margin:0 auto;
+	text-align:center;
+	width:320px;
+	background: rgb(239,252,216);
+}
+
+th {
+	height:80px;
+	padding:0 10px;
+}
+
+th>input {
+	width:100%;
+	border:none;
+	text-align:right;
+	font-size: 48px;
+}
+
+td>input[type='button'] {
+	width:100%;
+	height:60px;
+	color:rgb(21, 189, 255);
+	background: rgb(208, 252, 179);
+	font-size: 35px;
+	border:none;
+}
+
+td>input[type='button']:hover{
+	background: rgb(176,216,151);
+}
+
+td>input[type='button']:active{
+	background: rgb(94, 160, 53);
+}
