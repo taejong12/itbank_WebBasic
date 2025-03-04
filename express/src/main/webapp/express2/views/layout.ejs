@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><%=title %></title>
+<style>
+	* {
+		margin:0 auto;
+		text-align:center;
+	}
+	header {
+		border-bottom : 1px solid black;
+	}
+	li {
+		margin-top:20px;
+		display:inline-block;
+		width:15%;
+	}
+	footer {
+		position:absolute;
+		bottom:20px;
+		left:45%;
+	}
+</style>
+</head>
+<body>
+	<!-- 헤더 부분 -->
+	<%- include('partials/header') %>
+	<main>
+		<%=content %> <!-- 콘텐츠 부분 -->
+	</main>
+	<!-- 푸터 부분 -->
+	<%- include('partials/footer') %>
+</body>
+</html>

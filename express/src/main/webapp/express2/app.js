@@ -6,6 +6,11 @@ const path = require("path");
 const aboutRouter = require("./routes/about");
 const productRouter = require("./routes/product");
 
+// View Engine 설정
+app.set('view engine', 'ejs');
+// View 폴더 지정
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.static(
 		path.join(__dirname, 'public')));
 
